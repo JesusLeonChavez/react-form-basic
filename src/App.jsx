@@ -72,14 +72,14 @@ const App = () => {
 
   console.log(values);
 
-  return(
-    <div className="app">
+  return (
+    <div className="container">
       <form onSubmit={handleSubmit}>
         <h1>Register</h1>
         {inputs.map((input) => (
-          <FormInput 
-            key={input.id} 
-            {...input} 
+          <FormInput
+            key={input.id}
+            {...input}
             value={values[input.name]}
             onChange={onChange}
           />
@@ -87,7 +87,7 @@ const App = () => {
         <button>Submit</button>
       </form>
     </div>
-  )
+  );
 }
 
 export default App;
